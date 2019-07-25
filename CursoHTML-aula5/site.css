@@ -16,9 +16,13 @@ h1, h2 {
 	padding: 25px;
 	border-bottom: 10px solid black;
 }
+main{
+   
+}
 
 main div{
     padding: 30px 0;
+     display: inline-block
 }
 strong{
     font-weight: bold;
@@ -85,10 +89,12 @@ main div {
 
 aside {
 	text-align: center;
-    float: right;
-    position: absolute;
+    display: inline-block;
     top: 0;
-    right: 0;}
+    right: 0;
+float: left;}
+
+
 .social{
     display: inline-block;
 }
