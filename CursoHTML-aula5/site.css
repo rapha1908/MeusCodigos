@@ -6,6 +6,8 @@ body {
 }
 main h1 {text-transform: capitalize;}
 
+
+
 h1, h2 {
 	font-family: "Open Sans Condensed", "Arial", sans-serif;
 }
@@ -85,12 +87,22 @@ main div {
 	margin: auto;
 }
 
-aside {
+.foto{
+    float: right;
+}
+
+main{
+    float: left;
+    width: 85%;
+}
+aside, .foto {
 	text-align: center;
     display: inline-block;
-
-    top: 0;
-    right: 0;}
+    float: right;
+    clear: right;
+    width: 15%;
+    box-sizing: border-box;
+}
 
 .social{
     display: inline-block;
@@ -99,6 +111,7 @@ aside {
 .footer-pagina{
     background-color: #000;
 	color: #F2FFFC;
+    clear: both;
 }
 .fiat{
     float: right;
