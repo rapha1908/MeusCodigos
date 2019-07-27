@@ -100,10 +100,24 @@ aside, .foto {
     display: inline-block;
     float: right;
     clear: right;
-    width: 15%;
+    
     box-sizing: border-box;
+    border-bottom: 10px solid black;
+    border-left: 10px solid black;
+}
+aside{
+    width: 15%;
+    position: relative;
+    top: 300px;
 }
 
+.foto{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    right: 0;
+}
 .social{
     display: inline-block;
 }
