@@ -21,8 +21,10 @@ h1, h2 {
 }
 
 main div{
-    padding: 30px 0;
+    padding: 40px 0;
+    padding-bottom: 80px;
 }
+
 strong{
     font-weight: bold;
 }
@@ -126,6 +128,10 @@ aside{
     background-color: #000;
 	color: #F2FFFC;
     clear: both;
+    position: absolute;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
 }
 .fiat{
     float: right;
