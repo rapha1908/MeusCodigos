@@ -1,0 +1,10 @@
+
+figure{
+    border: 8px solid black;
+    width: 320px;
+    background-color: white;
+  
+}
+.portfolio li{  
+    display: inline-block;
+    width: 45%;}
