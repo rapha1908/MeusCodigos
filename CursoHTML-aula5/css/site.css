@@ -1,10 +1,17 @@
+html{
+    font-size: 120%;
+    
+}
+
 body {
 	font-family: "Crimson Text", "Times New Roman", serif;
 	background-color: #F2FFFC;
-	font-size: 120%;
+	
 	line-height: 1.5;
 }
-main h1 {text-transform: capitalize;}
+main h1 {
+    text-transform: capitalize;
+}
 
 
 
@@ -16,13 +23,13 @@ h1, h2 {
 	text-align: center;
 	background-color: #851944;
 	color: #FFF;
-	padding: 25px;
-	border-bottom: 10px solid black;
+	padding: 1.5rem;
+	border-bottom: .5rem solid black;
 }
 
 main div{
-    padding: 40px 0;
-    padding-bottom: 80px;
+    padding: 1.25rem 0rem;
+    padding-bottom: 3.5rem;
 }
 
 strong{
@@ -33,23 +40,23 @@ em{
 }
 
 h1{
-    font-size: 60px;
+    font-size: 3rem;
 }
 
 h2{
-    font-size: 30px;
+    font-size: 1.5rem;
     clear: both;
 }
 
 p {
 	text-align: justify;
-    margin: 20px 0; 
+    margin: 1em 0; 
 }
 
 blockquote {
 	background-color: #D9E5E3;
-	border: 10px solid #C2CCCA;
-	width: 250px;
+	border: .5em solid #C2CCCA;
+	width: 30ch;
 	box-sizing: border-box;
 }
 
@@ -67,8 +74,8 @@ nav a {
 }
 
 aside h1 {
-    font-size: 30px;
-    margin-bottom: 25px;
+    font-size: 1.5em;
+    margin-bottom: 1.25rem;
 }
 
 main a {
@@ -81,11 +88,11 @@ aside a {
 }
 
 blockquote, aside, footer {
-    padding: 20px 40px;
+    padding: 1.20rem 2rem;
 }
 
 main div {
-	width: 720px;
+	width: 53%;
 	margin: auto;
 }
 
@@ -104,14 +111,14 @@ aside, .foto {
     clear: right;
     
     box-sizing: border-box;
-    border-bottom: 10px solid black;
-    border-left: 10px solid black;
+    border-bottom: .5rem solid black;
+    border-left: .5rem solid black;
 }
 aside{
     width: 15%;
     position: relative;
     top: 300px;
-    margin-bottom: 80px;
+    margin-bottom: 3rem;
 }
 
 .foto{
@@ -136,9 +143,9 @@ aside{
 }
 .fiat{
     float: right;
-    margin-left: 15px;
+    margin-left: 1.25rem;
 }
 .petrobras{
     float: left;
-    margin-right: 15px;
+    margin-right: 1.25rem;
 }
