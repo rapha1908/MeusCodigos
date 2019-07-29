@@ -1,151 +1,134 @@
-html{
-    font-size: 120%;
-    
-}
-
 body {
-	font-family: "Crimson Text", "Times New Roman", serif;
-	background-color: #F2FFFC;
-	
-	line-height: 1.5;
-}
-main h1 {
-    text-transform: capitalize;
+    font-family: "Crimson Text", "Times New Roman", serif;
+    background-color: #F2FFFC;
+    font-size: 120%;
+    line-height: 1.5;
 }
 
+h1,
+h2,
+.subtitulo-principal {
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
 
-
-h1, h2 {
-	font-family: "Open Sans Condensed", "Arial", sans-serif;
+h1 {
+    text-transform: uppercase;
+    font-size: 3em;
 }
 
 .titulo-principal {
-	text-align: center;
-	background-color: #851944;
-	color: #FFF;
-	padding: 1.5rem;
-	border-bottom: .5rem solid black;
+    text-align: center;
+    background-color: #851944;
+    color: #FFF;
+    padding: 2rem;
+    border-bottom: .5rem solid #000;
 }
 
-main div{
-    padding: 1.25rem 0rem;
-    padding-bottom: 3.5rem;
-}
-
-strong{
-    font-weight: bold;
-}
-em{
-    font-style: italic;
-}
-
-h1{
-    font-size: 3rem;
-}
-
-h2{
-    font-size: 1.5rem;
-    clear: both;
-}
-
-p {
-	text-align: justify;
-    margin: 1em 0; 
-}
-
-blockquote {
-	background-color: #D9E5E3;
-	border: .5em solid #C2CCCA;
-	width: 30ch;
-	box-sizing: border-box;
-}
-
-aside {
-	background-color: #3C1D3D;
-	color: #F2FFFC;
-}
-
-footer {
-	
-}
-
-nav a {
-	color: #F2FFFC;
-}
-
-aside h1 {
+.subtitulo-texto {
     font-size: 1.5em;
-    margin-bottom: 1.25rem;
+    clear: both;
 }
 
 main a {
-	color: #851944;
+    color: #851944;
 }
 
-aside a {
-	color: inherit;
-	font-family: "Open Sans Condensed", sans-serif;
+main p {
+    text-align: justify;
+    margin: 1em 0;
 }
 
-blockquote, aside, footer {
-    padding: 1.20rem 2rem;
+.navegacao-site {
+    text-align: center;
+    background-color: #3C1D3D;
+    color: #F2FFFC;
+    padding: 1em;
 }
 
-main div {
-	width: 53%;
-	margin: auto;
+.navegacao-site a {
+    color: inherit;
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+    text-transform: lowercase;
 }
 
-.foto{
-    float: right;
+.navegacao-site h1 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
 }
 
-main{
-    float: left;
-    width: 85%;
-}
-aside, .foto {
-	text-align: center;
-    display: inline-block;
-    float: right;
-    clear: right;
-    
+.rodape-pagina {
+    background-color: #000;
+    color: #F2FFFC;
+    padding: 1em;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     box-sizing: border-box;
-    border-bottom: .5rem solid black;
-    border-left: .5rem solid black;
 }
-aside{
-    width: 15%;
+
+.container {
+    width: 80ch;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+.icones-redes-sociais li {
+    display: inline-block;
+}
+
+.icones-redes-sociais a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-indent: -99999px;
+}
+
+.github {
+    background-image: url(../imagens/github.png);
+}
+
+.twitter {
+    background-image: url(../imagens/twitter.png);
+}
+
+.linkedin {
+    background-image: url(../imagens/linkedin.png);
+}
+
+main {
+    width: 80%;
+    float: left;
+    padding-bottom: 4em;
+}
+
+.minha-foto,
+.navegacao-site {
+    border-left: .5em solid black;
+    border-bottom: .5em solid black;
+    box-sizing: border-box;
+}
+
+.navegacao-site {
+    width: 20%;
+    float: right;
     position: relative;
     top: 300px;
-    margin-bottom: 3rem;
 }
 
-.foto{
+.minha-foto {
     position: absolute;
-    width: 300px;
-    height: 300px;
     top: 0;
     right: 0;
-}
-.social{
-    display: inline-block;
-}
-
-.footer-pagina{
-    background-color: #000;
-	color: #F2FFFC;
-    clear: both;
-    position: absolute;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-}
-.fiat{
-    float: right;
-    margin-left: 1.25rem;
-}
-.petrobras{
-    float: left;
-    margin-right: 1.25rem;
+    height: 300px;
 }
