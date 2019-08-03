@@ -142,7 +142,8 @@ header {
 .eficiencia {
     top: 50%;
     left: 60%;
-    transform: translate(-50%, -50%) rotate(-5deg) translateZ(4px);
+    -webkit-transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
+            transform: translate(-50%, -50%) translateZ(4px) rotate(-5deg) scale(.25);
 }
 
 .boas-praticas {
