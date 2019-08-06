@@ -2,37 +2,64 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
-	<style>
-		section {
-			perspective: 4px;
-		}
-		.cubo {
-			transform-style: preserve-3d;
-		}
-		.face1{}
-		.face2{}
-		.face3{}
-		.face4{}
-		.face5{}
-		
-		
+<title>Teste Cubo</title>
+<style>
+.face {
+  display: block;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.frente {
+  background-color: red;
+  transform: translateZ(100px);
+}
+.direita {
+  background-color: blue;
+  transform: translateX(100px) rotateY(90deg);
+}
+.esquerda {
+  background-color: green;
+  transform: translateX(-100px) rotateY(-90deg);
+}
+.cima {
+  background-color: yellow;
+  transform: translateY(100px) rotateX(90deg);
+}
+.baixo {
+  background-color: magenta;
+  transform: translateY(-100px) rotateX(-90deg);
+}
+.tras {
+  background-color: cyan;
+  transform: translateZ(-100px) rotateY(180deg);
+}
+.cubo {
+  transform-style: preserve-3d;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  transform: rotateX(10deg) rotateY(10deg);
+}
 </style>
 </head>
 
 <body>
-	<main>
-    <section> 
-        <div class="cubo">
-            <span class="face1">...</span>
-            <span class="face2">...</span>
-            <span class="face3">...</span>
-            <span class="face4">...</span>
-            <span class="face5">...</span>
-            <span class="face6">...</span>
-        </div>
-    </section>
-    ...
-</main>
+<main>
+  <section>
+    <div class="cubo">
+      <div class="face frente"></div>
+      <div class="face direita"></div>
+      <div class="face esquerda"></div>
+      <div class="face cima"></div>
+      <div class="face baixo"></div>
+      <div class="face tras"></div>
+    </div>
+  </section>
+  ... </main>
 </body>
 </html>
