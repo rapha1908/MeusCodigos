@@ -37,55 +37,37 @@ textarea:focus {
 button:focus {
     background-color: #8C1D3D;
 }
-fieldset > fieldset {
-    display: inline;
+input[value="Outro"] + input {
+    display: none;
 }
-label[for="outro"] {
-    display: inline;
+input[value="Outro"]:checked + input {
+    display: block;
 }
-input[name="outro-assunto"] {
-    width: auto;
+.com-icone {
+    position: relative;
+    margin-bottom: 0;
 }
-label[for="nome"]{
-	position: relative;
+.com-icone::after {
+    content: '';
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background-color: #8C1D3D;
+    background-size: 50% 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 100%;
 }
-label[for="nome"]:after {
-	content: "";
-	background-image: url("../imagens/usuario.png");
-	background-size: 50% 50%;
-	width: 2em;
-	height: 2em;
-	background-position: center;
-	position: absolute;
-	top: 100%;
-	left: 0;
-	background-color: #565656;
-	background-repeat: no-repeat;
-}
-#nome {
+.com-icone + input {
     width: calc(100% - 2em);
     position: relative;
     left: 2em;
+    margin-top: 0;
 }
-label[for="email"]{
-	position: relative;
+.com-icone[for="nome"]::after {
+    background-image: url(../imagens/usuario.png);
 }
-label[for="email"]:after {
-	content: "";
-	background-image: url("../imagens/email.png");
-	background-size: 50% 50%;
-	width: 2em;
-	height: 2em;
-	background-position: center;
-	position: absolute;
-	top: 100%;
-	left: 0;
-	background-color: #565656;
-	background-repeat: no-repeat;
+.com-icone[for="email"]::after {
+    background-image: url(../imagens/email.png);
 }
-#email {
-    width: calc(100% - 2em);
-    position: relative;
-    left: 2em;
-}
-

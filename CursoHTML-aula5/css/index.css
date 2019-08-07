@@ -1,3 +1,6 @@
+body {
+    display: block;
+}
 .foto-home {
     height: 200px;
     border-radius: 50%;
@@ -26,6 +29,15 @@
     -webkit-transform: rotate(-5deg) skew(-10deg);
             transform: rotate(-5deg) skew(-10deg);
     display: inline-block;
+    -webkit-animation: flutua 1s ease-in-out infinite;
+            animation: flutua 1s ease-in-out infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    position: relative;
+}
+.saudacao:hover em {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
 }
 .botao-index {
     font-size: 1.25em;
@@ -37,6 +49,14 @@
     margin: 2em auto;
     display: block;
     text-align: center;
+    text-decoration: none;
+    transition: .5s;
+}
+.botao-index:focus,
+.botao-index:hover {
+    background-color: #C54974;
+    color: white;
+    box-shadow: 0 0 1em #FA9;
 }
 .secao-inicio {
     padding: 2em;
@@ -54,27 +74,33 @@
     background-image: linear-gradient(135deg, transparent, transparent 14px, rgba(0,0,0,.1) 14px, rgba(0,0,0,.1) 15px, transparent 15px, transparent);
     background-size: 20px 20px;
     background-attachment: fixed;
-	display: flex;
-    align-items: center;
-    justify-content: space-between;
-	flex-direction:column;
-	
 }
 .trabalhos h2 {
     color: #FFF;
 }
 .trabalhos ul {
-    border: .5em solid black;
-	display: flex;
+    display: -webkit-flex;
+    display:         flex;
 }
 .trabalhos li {
- 	flex: 1;
-	
+    -webkit-flex: auto;
+            flex: auto;
+    border: .5em solid #000;
+}
+.trabalhos li:first-child {
+    order: 2;
+    transform: scale(1.2);
+}
+.trabalhos li:nth-child(2) {
+    order: 1;
+}
+.trabalhos li:nth-child(3) {
+    order: 3;
 }
 .trabalhos img {
     width: 100%;
+    display: block;
 }
-
 .blog {
     background-color: #999;
     position: relative;
@@ -111,14 +137,12 @@ main {
     width: 100%;
     padding-bottom: 0;
     float: none;
-	
 }
 html,body {
     overflow-x: hidden;
     height: 100%;
 }
 body {
-	display: block;
     -webkit-perspective: 6px;
             perspective: 6px;
     -webkit-perspective-origin: 50% 160px;
@@ -139,6 +163,8 @@ body {
     font-size: 400%;
     color: rgba(255, 127, 127, .5);
     position: absolute;
+    -webkit-animation: aparece 2s;
+            animation: aparece 2s;
 }
 .eficiencia {
     top: 50%;
@@ -227,17 +253,12 @@ body {
 
     line-height: 1;
 
-    /* largura = 14em */
-    /* altura = 3.5em */
-    /* tx = .707 * h - .707 * w + w */
-    /* ty = -.707 * h */
-    -webkit-transform: translate(6.5765em, -2.4745em) rotate(45deg);
-            transform: translate(calc( 0.707 * (3.5em - 100% ) + 100%), calc(-0.707 * 3.5em)) rotate(45deg);
+    -webkit-transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
+            transform: translate(calc(.707 * (3.5em - 100%) + 100%), calc(-.707 * 3.5em)) rotate(45deg);
     -webkit-transform-origin: 0 0;
             transform-origin: 0 0;
 
-    width: 14em;
-    padding: 1em 0;
+    padding: 1em 3em;
     box-sizing: border-box;
 
     text-align: center;
@@ -248,6 +269,12 @@ body {
 
     font-size: 1.2em;
     font-family: "Open Sans Condensed", sans-serif;
+    -webkit-animation: aparece .5s;
+            animation: aparece .5s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
 }
 .blog .inicio-post {
     position: absolute;
@@ -268,4 +295,32 @@ body {
 .blog a:focus {
     background-color: #F2FFFC;
     color: #F26;
+}
+@-webkit-keyframes aparece {
+    from {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+@keyframes aparece {
+    from {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+@keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+@-webkit-keyframes flutua {
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
 }
