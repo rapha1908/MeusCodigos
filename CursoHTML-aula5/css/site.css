@@ -3,6 +3,8 @@ body {
     background-color: #F2FFFC;
     font-size: 120%;
     line-height: 1.5;
+	display: flex;
+    flex-wrap: wrap;
 }
 
 h1,
@@ -47,10 +49,11 @@ main p {
 }
 
 .navegacao-site {
+	padding-top: calc(300px + 1em);
     text-align: center;
     background-color: #3C1D3D;
     color: #F2FFFC;
-    padding: 1em;
+	
 }
 
 .navegacao-site a {
@@ -128,15 +131,11 @@ em {
 }
 
 main {
-    width: calc(100% - 0.9 * 300px);
-    float: left;
-    padding-bottom: 4em;
+    flex-grow: 1;
 }
 
 .minha-foto,
 .navegacao-site {
-    border-left: .5em solid black;
-    border-bottom: .5em solid black;
     box-sizing: border-box;
 }
 
@@ -152,6 +151,7 @@ main {
     top: 0;
     right: 0;
     height: 300px;
+	border-bottom: .5em solid black;
 }
 
 .icones-redes-sociais a {

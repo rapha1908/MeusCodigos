@@ -111,12 +111,14 @@ main {
     width: 100%;
     padding-bottom: 0;
     float: none;
+	
 }
 html,body {
     overflow-x: hidden;
     height: 100%;
 }
 body {
+	display: block;
     -webkit-perspective: 6px;
             perspective: 6px;
     -webkit-perspective-origin: 50% 160px;
