@@ -46,3 +46,46 @@ label[for="outro"] {
 input[name="outro-assunto"] {
     width: auto;
 }
+label[for="nome"]{
+	position: relative;
+}
+label[for="nome"]:after {
+	content: "";
+	background-image: url("../imagens/usuario.png");
+	background-size: 50% 50%;
+	width: 2em;
+	height: 2em;
+	background-position: center;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #565656;
+	background-repeat: no-repeat;
+}
+#nome {
+    width: calc(100% - 2em);
+    position: relative;
+    left: 2em;
+}
+label[for="email"]{
+	position: relative;
+}
+label[for="email"]:after {
+	content: "";
+	background-image: url("../imagens/email.png");
+	background-size: 50% 50%;
+	width: 2em;
+	height: 2em;
+	background-position: center;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #565656;
+	background-repeat: no-repeat;
+}
+#email {
+    width: calc(100% - 2em);
+    position: relative;
+    left: 2em;
+}
+
