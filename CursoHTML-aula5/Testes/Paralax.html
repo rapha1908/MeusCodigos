@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+html {
+    font-size: 120%;
+}
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+body {
+    perspective: 6px;
+    perspective-origin: 50% 80px;
+}
+.fundo {
+    background-color: #CBCBCB;
+    width: 68rem;
+    height: 40rem;
+    transform-style: preserve-3d;
+	position: relative;
+}
+	.uldaspalavras{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		}
+	.palavras-home{
+		position: absolute;
+		text-decoration: none;
+		font-size: 3em;
+		display: inline-block;
+	}
+	.numero1{
+    top: 30%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%) translateZ(-3px) scale(.30);
+            transform: translate(-50%, -50%) translateZ(-3px) scale(.30);
+}
+.numero2{
+    top: 40%;
+    left: 40%;
+    -webkit-transform: translate(-50%, -50%) translateZ(3px) scale(.25);
+            transform: translate(-50%, -50%) translateZ(3px) scale(.25);
+}
+.numero3{
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) translateZ(2px) scale(.25);
+            transform: translate(-50%, -50%) translateZ(2px) scale(.25);            
+}
+.numero4{
+    top: 45%;
+    left: 35%;
+    -webkit-transform: translate(-50%, -50%) translateZ(1px) scale(.25);
+                transform: translate(-50%, -50%) translateZ(1px) scale(.25);
+</style>
+</head>
+
+<body>
+<div class="fundo">
+  <ul class="uldaspalavras">
+    <li class="palavras-home numero1">numero1</li>
+    <li class="palavras-home numero2">numero2</li>
+    <li class="palavras-home numero3">numero3</li>
+    <li class="palavras-home numero4">numero4</li>
+  </ul>
+</div>
+</body>
+</html>
