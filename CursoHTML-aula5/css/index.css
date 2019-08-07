@@ -54,22 +54,27 @@
     background-image: linear-gradient(135deg, transparent, transparent 14px, rgba(0,0,0,.1) 14px, rgba(0,0,0,.1) 15px, transparent 15px, transparent);
     background-size: 20px 20px;
     background-attachment: fixed;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+	flex-direction:column;
+	
 }
 .trabalhos h2 {
     color: #FFF;
 }
 .trabalhos ul {
-    overflow: hidden;
     border: .5em solid black;
+	display: flex;
 }
 .trabalhos li {
-    float: left;
-    width: 33.333%;
+ 	flex: 1;
+	
 }
 .trabalhos img {
     width: 100%;
-    display: block;
 }
+
 .blog {
     background-color: #999;
     position: relative;
