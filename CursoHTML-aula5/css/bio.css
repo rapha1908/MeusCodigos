@@ -10,11 +10,13 @@
 .citacao-bio:nth-of-type(even) {
     float: left;
     margin-left: 0;
+	transition: 1s;
 }
 
 .citacao-bio:nth-of-type(odd) {
     float: right;
     margin-right: 0;
+	transition: 1s;
 }
 
 .citacao-bio:hover,
@@ -25,11 +27,13 @@
 .citacao-bio:nth-of-type(odd):hover,
 .citacao-bio:nth-of-type(odd):focus {
     transform: scale(1.2) rotate(5deg);
+	transition: 1s;
 }
 
 .citacao-bio:nth-of-type(even):hover,
 .citacao-bio:nth-of-type(even):focus {
     transform: scale(1.2) rotate(-5deg);
+	transition: 1s;
 }
 
 .container > p::first-letter {
@@ -51,4 +55,31 @@
 
 .citacao-bio > p {
     position: relative;
+}
+.habilidades {
+	border-collapse: separate;
+    border-spacing: 5px;
+	color: aliceblue;
+}
+thead th{
+	background-color: #3C1D3D;
+	padding: 1em;
+}
+tbody th{
+	background-color: #851944;
+		padding: 1em;
+}
+.habilidades td{
+	background-color: #4D4D4D;
+	padding: 1em;
+
+}
+
+
+.habilidades [colspan]{
+	text-align: center;
+	font-style: italic;
+}
+.habilidades [rowspan]{
+	vertical-align: middle;
 }
