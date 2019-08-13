@@ -12,20 +12,14 @@ botaoAdicionar.addEventListener('click', function(event){
 	//criando uma funçao que gera um Objeto paciente
 	//Seleciona os dados do formulario
 	var paciente = obtemPacienteFormulario(form);
-	//cria a tabela
-	var pacienteTr = montaTr(paciente);	
 	
-	//valida paciente
 	var erros =validaPaciente(paciente);
 	
 	if(erros.length > 0){
 		exibeMensagemDeErro(erros);
 		return;
 	}
-	
-    var tabela = document.querySelector("#tabela-pacientes");
-
-    tabela.appendChild(pacienteTr);
+	adicionaPacienteNaTabala(paciente);
 	form.reset();
 	var ul = document.querySelector("#mensagens-erro");
 	ul.innerHTML = "";
@@ -108,4 +102,12 @@ function exibeMensagemDeErro(erros){
 		li.textContent = erro;
 		ul.appendChild(li);
 	})
+}
+
+function adicionaPacienteNaTabala(paciente){
+	var pacienteTr = montaTr(paciente);	
+	var tabela = document.querySelector("#tabela-pacientes");
+	tabela.appendChild(pacienteTr);
+//13825,84
+	
 }
