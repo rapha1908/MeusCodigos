@@ -11,8 +11,8 @@ Error: Undefined variable: "$cor-branca".
 7:   height: 330px;
 8:   padding-top: 10em;
 9: 	
-10: 	
-11: }
+10: 	@media  #{$mq-mobile} {
+11: 		font-size: 14px;
 
 Backtrace:
 C:\Users\User\Desktop\site-apeperia\css\layout\destaque.scss:6
@@ -61,4 +61,4 @@ C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$cor-branca\".\A         on line 6 of C:\Users\User\Desktop\site-apeperia\css\layout\destaque.scss\A \A 1: /** Destaque **/\A 2: .destaque {\A 3:   background: url(../imagens/destaque.jpg) center bottom repeat-x;\A 4:   -webkit-background-size: cover;\A 5:   background-size: cover;\A 6:   color: $cor-branca;\A 7:   height: 330px;\A 8:   padding-top: 10em;\A 9: 	\A 10: 	\A 11: }"; }
+  content: "Error: Undefined variable: \"$cor-branca\".\A         on line 6 of C:\Users\User\Desktop\site-apeperia\css\layout\destaque.scss\A \A 1: /** Destaque **/\A 2: .destaque {\A 3:   background: url(../imagens/destaque.jpg) center bottom repeat-x;\A 4:   -webkit-background-size: cover;\A 5:   background-size: cover;\A 6:   color: $cor-branca;\A 7:   height: 330px;\A 8:   padding-top: 10em;\A 9: 	\A 10: 	@media  #{$mq-mobile} {\A 11: 		font-size: 14px;"; }

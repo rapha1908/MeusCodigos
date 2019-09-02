@@ -1,39 +1,70 @@
-/** Blog **/
-.blog {
-  display: block;
-  position: relative; }
+/*
+Error: Undefined variable: "$mq-mobile".
+        on line 25 of C:\Users\User\Desktop\site-apeperia\css\layout\blog.scss
 
-.blog::after {
-  content: "";
-  background: url(../imagens/fundo.png);
-  background-size: 25px 25px;
-  opacity: .15;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; }
+20: .post-destaque,
+21: .posts-antigos {
+22:   width: 48%;
+23:   display: inline-block;
+24:   vertical-align: top;
+25: 	@media  #{$mq-mobile} {
+26: 		width: auto;
+27: 	}
+28: 	
+29: }
+30: 
 
-.post-destaque,
-.posts-antigos {
-  width: 48%;
-  display: inline-block;
-  vertical-align: top; }
-
-.post-destaque {
-  margin-right: 2em; }
-
-.post-destaque img {
-  width: 100%; }
-
-.posts-antigos a {
-  text-decoration: none;
-  color: black;
-  background: url(../imagens/icone-relogio.png) left center no-repeat;
-  padding-left: 2.5em;
-  height: 1.7em;
-  display: block; }
-
-.posts-antigos a:hover {
-  text-decoration: underline; }
+Backtrace:
+C:\Users\User\Desktop\site-apeperia\css\layout\blog.scss:25
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/interpolation.rb:170:in `_perform'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:555:in `block in run_interp_no_strip'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:553:in `map'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:553:in `run_interp_no_strip'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:560:in `run_interp'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:525:in `visit_media'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/root_node.rb:20:in `render'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:290:in `render'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:400:in `run'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/bin/sass:13:in `<top (required)>'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/bin/sass:23:in `load'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$mq-mobile\".\A         on line 25 of C:\Users\User\Desktop\site-apeperia\css\layout\blog.scss\A \A 20: .post-destaque,\A 21: .posts-antigos {\A 22:   width: 48%;\A 23:   display: inline-block;\A 24:   vertical-align: top;\A 25: 	@media  #{$mq-mobile} {\A 26: 		width: auto;\A 27: 	}\A 28: 	\A 29: }\A 30: "; }

@@ -1,28 +1,30 @@
 /*
-Error: Undefined mixin 'borda-arredondada'.
-        on line 17 of C:\Users\User\Desktop\site-apeperia\css\layout\contato.scss, in `borda-arredondada'
-        from line 17 of C:\Users\User\Desktop\site-apeperia\css\layout\contato.scss
+Error: Undefined variable: "$mq-mobile".
+        on line 10 of C:\Users\User\Desktop\site-apeperia\css\layout\contato.scss
 
-12: .contato input,
-13: textarea {
-14:   width: 100%;
-15:   margin-bottom: .8em;
-16:   padding: 4px 8px;
-17:   @include borda-arredondada;
-18:   border: 2px solid #ccc;
-19: }
-20: 
-21: .contato button {
-22:   margin: 0 auto;
+5: }
+6: 
+7: form {
+8:   margin: 0 auto;
+9:   width: 50%;
+10: 	@media  #{$mq-mobile} {
+11: 		width: auto;
+12: 	}
+13: }
+14: 
+15: .contato input,
 
 Backtrace:
-C:\Users\User\Desktop\site-apeperia\css\layout\contato.scss:17:in `borda-arredondada'
-C:\Users\User\Desktop\site-apeperia\css\layout\contato.scss:17
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:98:in `with_mixin'
-C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:\Users\User\Desktop\site-apeperia\css\layout\contato.scss:10
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/interpolation.rb:170:in `_perform'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:555:in `block in run_interp_no_strip'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:553:in `map'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:553:in `run_interp_no_strip'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:560:in `run_interp'
+C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:525:in `visit_media'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
@@ -65,4 +67,4 @@ C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'borda-arredondada'.\A         on line 17 of C:\Users\User\Desktop\site-apeperia\css\layout\contato.scss, in `borda-arredondada'\A         from line 17 of C:\Users\User\Desktop\site-apeperia\css\layout\contato.scss\A \A 12: .contato input,\A 13: textarea {\A 14:   width: 100%;\A 15:   margin-bottom: .8em;\A 16:   padding: 4px 8px;\A 17:   @include borda-arredondada;\A 18:   border: 2px solid #ccc;\A 19: }\A 20: \A 21: .contato button {\A 22:   margin: 0 auto;"; }
+  content: "Error: Undefined variable: \"$mq-mobile\".\A         on line 10 of C:\Users\User\Desktop\site-apeperia\css\layout\contato.scss\A \A 5: }\A 6: \A 7: form {\A 8:   margin: 0 auto;\A 9:   width: 50%;\A 10: 	@media  #{$mq-mobile} {\A 11: 		width: auto;\A 12: 	}\A 13: }\A 14: \A 15: .contato input,"; }
