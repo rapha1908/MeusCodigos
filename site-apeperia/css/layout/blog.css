@@ -7,7 +7,7 @@ Error: Undefined variable: "$mq-mobile".
 22:   width: 48%;
 23:   display: inline-block;
 24:   vertical-align: top;
-25: 	@media  #{$mq-mobile} {
+25: 	@media #{$mq-mobile} {
 26: 		width: auto;
 27: 	}
 28: 	
@@ -67,4 +67,4 @@ C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$mq-mobile\".\A         on line 25 of C:\Users\User\Desktop\site-apeperia\css\layout\blog.scss\A \A 20: .post-destaque,\A 21: .posts-antigos {\A 22:   width: 48%;\A 23:   display: inline-block;\A 24:   vertical-align: top;\A 25: 	@media  #{$mq-mobile} {\A 26: 		width: auto;\A 27: 	}\A 28: 	\A 29: }\A 30: "; }
+  content: "Error: Undefined variable: \"$mq-mobile\".\A         on line 25 of C:\Users\User\Desktop\site-apeperia\css\layout\blog.scss\A \A 20: .post-destaque,\A 21: .posts-antigos {\A 22:   width: 48%;\A 23:   display: inline-block;\A 24:   vertical-align: top;\A 25: 	@media #{$mq-mobile} {\A 26: 		width: auto;\A 27: 	}\A 28: 	\A 29: }\A 30: "; }
