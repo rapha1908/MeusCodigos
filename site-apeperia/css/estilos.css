@@ -3,6 +3,11 @@
   background-repeat: no-repeat;
 }
 
+.plataformas-sprite, .plataformas-logo-android, .plataformas-logo-apple, .plataformas-logo-blackberry, .plataformas-logo-windows {
+  background-image: url('../imagens/plataformas-s27d043805f.png');
+  background-repeat: no-repeat;
+}
+
 .plataformas li, .social li a {
   text-indent: -9999px;
   overflow: hidden;
@@ -586,20 +591,46 @@ header .container {
   margin: 1em 1.5em 0 0;
 }
 
-.plataformas li:nth-child(1) {
-  background-image: url(../imagens/logo-apple.png);
+.plataformas-logo-android {
+  background-position: 0 0;
 }
 
-.plataformas li:nth-child(2) {
-  background-image: url(../imagens/logo-android.png);
+.plataformas-logo-apple {
+  background-position: 0 -70px;
 }
 
-.plataformas li:nth-child(3) {
-  background-image: url(../imagens/logo-windows.png);
+.plataformas-logo-blackberry {
+  background-position: 0 -141px;
 }
 
-.plataformas li:nth-child(4) {
-  background-image: url(../imagens/logo-blackberry.png);
+.plataformas-logo-windows {
+  background-position: 0 -196px;
+}
+
+.plataformas li {
+  width: 60px;
+  height: 60px;
+}
+
+li.plataformas-logo-android {
+  background-position: 0 0;
+}
+
+li.plataformas-logo-apple {
+  background-position: 0 -70px;
+}
+
+li.plataformas-logo-blackberry {
+  background-position: 0 -131px;
+  width: 65px;
+}
+
+li.plataformas-logo-windows {
+  background-position: 0 -196px;
+}
+
+.plataformas li {
+  background-image: url(../imagens/plataformas-s27d043805f.png);
 }
 
 /** Planos **/
@@ -613,7 +644,7 @@ header .container {
 
 .plano {
   background: #fff;
-  width: 18em;
+  width: 288px;
   display: inline-block;
   margin: 1em 0 0 1.4em;
   padding-bottom: 2em;
@@ -811,8 +842,8 @@ footer::before {
 }
 
 footer .container {
-  padding-top: 3em;
-  height: 6.5em;
+  padding-top: 48px;
+  height: 104px;
   position: relative;
 }
 
@@ -827,7 +858,7 @@ footer .container img {
 
 .menu-rodape ul li {
   display: inline-block;
-  margin-left: 2em;
+  margin-left: 32px;
 }
 
 .menu-rodape {
@@ -858,7 +889,7 @@ footer a {
   display: block;
   width: 55px;
   height: 55px;
-  margin-left: 1em;
+  margin-left: 16px;
 }
 
 .social a {

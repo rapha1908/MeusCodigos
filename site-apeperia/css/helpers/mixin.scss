@@ -8,7 +8,9 @@
   background-repeat: no-repeat;
 }
 
-
+@function multiplica-pela-fonte($multiplicador){
+	@return round($multiplicador * $tamamnho-da-fonte-padrao);
+}
 
 
 ////////////////////////////////////////////// Compass

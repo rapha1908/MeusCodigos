@@ -29,8 +29,8 @@ footer::before {
 }
 
 footer .container {
-  padding-top: 3em;
-  height: 6.5em;
+  padding-top: multiplica-pela-fonte(3);
+  height: multiplica-pela-fonte(6.5);
   position: relative;
 }
 
@@ -45,7 +45,7 @@ footer .container img {
 
 .menu-rodape ul li {
   display: inline-block;
-  margin-left: 2em;
+  margin-left: multiplica-pela-fonte(2);
 }
 
 .menu-rodape {
@@ -77,7 +77,7 @@ footer a {
   width: 55px;
   height: 55px;
  @extend %image-replacement;
-  margin-left: 1em;
+  margin-left: multiplica-pela-fonte(1);
 }
 
 .social a {
