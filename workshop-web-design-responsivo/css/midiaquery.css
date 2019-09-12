@@ -1,0 +1,52 @@
+/*Tudo que passar de 600px*/
+@media (min-width: 600px) {
+    html {
+        font-size: 1.125em;
+    }
+	.secao{
+	float: left;
+	width: 50%;
+		
+		
+}
+	.barra-nav {
+    background: #f0f0f0;
+    padding: 1em;
+    margin: 0;
+
+    height: 100%;
+    width: 90%;
+    max-width: 320px;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -90%;
+
+    transition: left 0.3s ease-out;
+}
+
+.menu-ativo .barra-nav {
+    left: 0;
+}
+
+}
+/*não aparecer em Desktop*/
+@media not all and (max-width: 600px) {
+    .menu-abrir,
+    .menu-fechar {
+        display: none;
+    }
+}
+/*Tudo que passar de 1000px*/
+
+@media (min-width: 1000px) {
+    html {
+        font-size: 1.25em;
+    }
+	.secao{
+	float: left;
+	width: 31%;
+}
+	
+}
