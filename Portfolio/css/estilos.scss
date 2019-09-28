@@ -1,0 +1,101 @@
+@import url("fonts/fonts.css"); 
+
+@import 'helpers/variaveis';
+
+@import 'layout/geral';
+@import 'layout/navegacao';     
+/*-------- Main Section Start-----------*/
+@import 'layout/header';
+
+
+/*-------- About start -----------*/
+@import 'layout/sobre';
+
+/*-------- About end -----------*/
+
+/*-------- Carrossel start -----------*/
+@import 'layout/carrossel';
+/*-------- Carrossel end-----------* /
+ 
+ 
+/*-------- Main Section end -----------*/
+
+/*-------- footer start -----------*/
+@import 'layout/rodape';
+
+/*-------- footer end -----------*/
+
+.galeria{
+	display: block;
+	.container{
+		margin: 50px 0;
+		display: flex;
+		flex-wrap: wrap;
+		.galeria-items{
+			img{
+				width: 25%;
+				max-width: 250px;
+			}
+		}
+	}
+}
+    
+           
+
+
+/*-------- Media Query-----------*/
+
+/*-------- less 1130px-----------*/
+@media only screen and (max-width: 1130px){
+	.rodape{
+		.container{
+		grid-template-columns: repeat(2,1fr);
+			.contato{
+				margin-left: 3rem;
+			}	
+		}
+	}
+	
+	 
+	   
+}
+
+@media only screen and (max-width: 750px){
+	.nav{  
+		.nav-menu,.nav-items ul{
+			margin: 1rem;  
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		.toggle-collpase{
+			display: initial; 
+		} 
+	}  
+	.collapse{
+	height: 35rem;
+}
+	.container .site-container{
+		grid-template-columns: 100%;
+	}
+		.rodape{ 
+		.container{
+		grid-template-columns: repeat(1,1fr);
+			.contato, .design{
+				margin-left: 3rem;
+			}	
+		}
+	} 
+  
+}
+
+@media only screen and (max-width: 520px){
+	.nav{
+		.toggle-collpase{
+			width: 80%;
+		}
+		
+	}
+	.rodape{
+	}
+
+}

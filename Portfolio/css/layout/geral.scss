@@ -1,0 +1,46 @@
+html, body{
+	margin: auto;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+section{
+	padding-bottom: 5rem!important;
+}
+a {
+	text-decoration: none;
+	color:$black;
+}
+ul{
+	list-style-type: none;
+
+}
+
+h1{
+	font-family: $fontLexend;
+	font-size: 2.5rem;
+}
+h2{
+	font-family: $fontLexend;
+	
+}
+h3{
+	font-family: $fontAbel;
+	font-size: 1.3rem;
+}
+.btn{
+	background: $sky;
+	padding: 1rem 3rem;
+	border-radius: 2rem;
+
+	font-family: $fontLivvic;
+	cursor: pointer;
+	border: none;
+	margin: 1.8rem;
+}
+text-gray{
+	color: $textGray;
+}
+p{
+	font-family:$fontLexend;
+	color: $textLight;
+}
