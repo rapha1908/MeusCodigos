@@ -1,40 +1,33 @@
-class ProxyFactory {
+class ProxyFactory{
 
     static create(objeto, props, acao) {
-        return new Proxy(new objeto, {
+
+        return new Proxy(objeto, {
 
             get(target, prop, receiver) {
 
-                if (props.includes(prop) && ProxyFactory._ehFuncao(target[prop]){
+                if(props.includes(prop) && ProxyFactory._ehFuncao(target[prop])) {
 
-                    return function () {
+                    return function() {
 
-                        console.log(`método '${prop}' interceptado`);
-
+                        console.log(`a propriedade "${prop}" foi interceptada`);
                         Reflect.apply(target[prop], target, arguments);
-
                         return acao(target);
-
-                    }
+                    };
                 }
+                return Reflect.get(target, prop, receiver);       
+           },
 
-                return Reflect.get(target, prop, receiver);
-            },
-			
-		   set(target, prop, value, receiver) {
+            set(target, prop, value, receiver) {
                 if(props.includes(prop)) {
                     target[prop] = value;
                     acao(target);
                 }
                 return Reflect.set(target, prop, value, receiver);
             }
-			
-        });
+      });
     }
-	
-	
-	static _ehFuncao(func){
+		static _ehFuncao(func){
  		return typeof(func) == typeof(Function);
 	}
-
 }
