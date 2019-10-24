@@ -15,6 +15,13 @@ main{
 		h1,h3{
 			margin: .3rem;
 		}
+		h1{
+			margin-bottom: 20px;
+
+		}
+		a{
+			display: block;
+		}
 		.btn{
 			font-size: 1rem;
 			&:hover{

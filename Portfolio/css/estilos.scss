@@ -17,7 +17,6 @@
 @import 'layout/carrossel';
 /*-------- Carrossel end-----------* /
  
- 
 /*-------- Main Section end -----------*/
 
 /*-------- footer start -----------*/
@@ -25,23 +24,8 @@
 
 /*-------- footer end -----------*/
 
-.galeria{
-	display: block;
-	.container{
-		margin: 50px 0;
-		display: flex;
-		flex-wrap: wrap;
-		.galeria-items{
-			img{
-				width: 25%;
-				max-width: 250px;
-			}
-		}
-	}
-}
-    
            
-
+     
 
 /*-------- Media Query-----------*/
 

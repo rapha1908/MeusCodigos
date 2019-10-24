@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$white".
-        on line 13 of C:\Users\User\Desktop\Meu Site\css\layout\header.scss
+        on line 13 of C:\Users\User\Desktop\Portfolio\css\layout\header.scss
 
 8: 		
 9:  	}
@@ -12,10 +12,10 @@ Error: Undefined variable: "$white".
 15: 		h1,h3{
 16: 			margin: .3rem;
 17: 		}
-18: 		.btn{
+18: 		h1{
 
 Backtrace:
-C:\Users\User\Desktop\Meu Site\css\layout\header.scss:13
+C:\Users\User\Desktop\Portfolio\css\layout\header.scss:13
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -72,4 +72,4 @@ C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 13 of C:\Users\User\Desktop\Meu Site\css\layout\header.scss\A \A 8: 		\A 9:  	}\A 10: 	.site-background{\A 11: 		padding-top: 10rem;\A 12: 		text-align: center;\A 13: 		color: $white;\A 14: 	\A 15: 		h1,h3{\A 16: 			margin: .3rem;\A 17: 		}\A 18: 		.btn{"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 13 of C:\Users\User\Desktop\Portfolio\css\layout\header.scss\A \A 8: 		\A 9:  	}\A 10: 	.site-background{\A 11: 		padding-top: 10rem;\A 12: 		text-align: center;\A 13: 		color: $white;\A 14: 	\A 15: 		h1,h3{\A 16: 			margin: .3rem;\A 17: 		}\A 18: 		h1{"; }

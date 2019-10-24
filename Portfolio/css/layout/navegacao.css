@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$corFundo".
-        on line 12 of C:\Users\User\Desktop\Meu Site\css\layout\navegacao.scss
+        on line 12 of C:\Users\User\Desktop\Portfolio\css\layout\navegacao.scss
 
 7: 
 8: }
@@ -15,7 +15,7 @@ Error: Undefined variable: "$corFundo".
 17: 	transition: height 1s ease-in-out;
 
 Backtrace:
-C:\Users\User\Desktop\Meu Site\css\layout\navegacao.scss:12
+C:\Users\User\Desktop\Portfolio\css\layout\navegacao.scss:12
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -61,4 +61,4 @@ C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$corFundo\".\A         on line 12 of C:\Users\User\Desktop\Meu Site\css\layout\navegacao.scss\A \A 7: \A 8: }\A 9: \A 10: \A 11: .nav{\A 12: 	background: $corFundo;\A 13: 	padding: 0.2rem;\A 14: 	height: 0rem;\A 15: 	min-height: 10vh;\A 16: 	overflow: hidden;\A 17: 	transition: height 1s ease-in-out;"; }
+  content: "Error: Undefined variable: \"$corFundo\".\A         on line 12 of C:\Users\User\Desktop\Portfolio\css\layout\navegacao.scss\A \A 7: \A 8: }\A 9: \A 10: \A 11: .nav{\A 12: 	background: $corFundo;\A 13: 	padding: 0.2rem;\A 14: 	height: 0rem;\A 15: 	min-height: 10vh;\A 16: 	overflow: hidden;\A 17: 	transition: height 1s ease-in-out;"; }

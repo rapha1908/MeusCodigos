@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$fontAbel".
-        on line 38 of C:\Users\User\Desktop\Portfolio\css\layout\carrossel.scss
+        on line 41 of C:\Users\User\Desktop\Portfolio\css\layout\carrossel.scss
 
-33: 						padding: 1rem;
-34: 					}
-35: 				}
-36: 				span{
-37: 					display: block;
-38: 					font-family: $fontAbel;
-39: 				}
-40: 			
-41: 			}
-42: 		}
-43: 		.owl-nav{
+36: 						display: block;
+37: 					}
+38: 				}
+39: 				span{
+40: 					display: block;
+41: 					font-family: $fontAbel;
+42: 				}
+43: 			
+44: 			}
+45: 		}
+46: 		.owl-nav{
 
 Backtrace:
-C:\Users\User\Desktop\Portfolio\css\layout\carrossel.scss:38
+C:\Users\User\Desktop\Portfolio\css\layout\carrossel.scss:41
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -105,4 +105,4 @@ C:/Program Files/Adobe/Adobe Dreamweaver CC 2019/ruby/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fontAbel\".\A         on line 38 of C:\Users\User\Desktop\Portfolio\css\layout\carrossel.scss\A \A 33: 						padding: 1rem;\A 34: 					}\A 35: 				}\A 36: 				span{\A 37: 					display: block;\A 38: 					font-family: $fontAbel;\A 39: 				}\A 40: 			\A 41: 			}\A 42: 		}\A 43: 		.owl-nav{"; }
+  content: "Error: Undefined variable: \"$fontAbel\".\A         on line 41 of C:\Users\User\Desktop\Portfolio\css\layout\carrossel.scss\A \A 36: 						display: block;\A 37: 					}\A 38: 				}\A 39: 				span{\A 40: 					display: block;\A 41: 					font-family: $fontAbel;\A 42: 				}\A 43: 			\A 44: 			}\A 45: 		}\A 46: 		.owl-nav{"; }

@@ -32,7 +32,8 @@ h3 {
   font-family: "Livvic";
   cursor: pointer;
   border: none;
-  margin: 1.8rem; }
+  margin: 1.8rem;
+  display: block; }
 
 text-gray {
   color: #3f4954; }
@@ -108,6 +109,10 @@ main .site-background {
   color: #FFFFFF; }
   main .site-background h1, main .site-background h3 {
     margin: .3rem; }
+  main .site-background h1 {
+    margin-bottom: 20px; }
+  main .site-background a {
+    display: block; }
   main .site-background .btn {
     font-size: 1rem; }
     main .site-background .btn:hover {
@@ -192,6 +197,8 @@ main .blog {
         padding: 2rem 0; }
         main .blog .blog-post .blog-content .blog-title h3 {
           padding: 1rem; }
+        main .blog .blog-post .blog-content .blog-title a {
+          display: block; }
       main .blog .blog-post .blog-content span {
         display: block;
         font-family: "Abel"; }
@@ -209,7 +216,6 @@ main .blog {
     color: #3f4954; }
 
 /*-------- Carrossel end-----------* /
- 
  
 /*-------- Main Section end -----------*/
 /*-------- footer start -----------*/
@@ -259,16 +265,6 @@ main .blog {
           color: #FFFFFF; }
 
 /*-------- footer end -----------*/
-.galeria {
-  display: block; }
-  .galeria .container {
-    margin: 50px 0;
-    display: flex;
-    flex-wrap: wrap; }
-    .galeria .container .galeria-items img {
-      width: 25%;
-      max-width: 250px; }
-
 /*-------- Media Query-----------*/
 /*-------- less 1130px-----------*/
 @media only screen and (max-width: 1130px) {
