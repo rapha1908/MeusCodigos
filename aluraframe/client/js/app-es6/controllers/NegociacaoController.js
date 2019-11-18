@@ -1,3 +1,12 @@
+import {ListaNegociacoes} from '../models/ListaNegociacoes';
+import {Mensagem} from '../models/Mensagem';
+import {NegociacoesView} from '../views/NegociacoesView';
+import {MensagemView} from '../views/MensagemView';
+import {NegociacaoService} from '../services/NegociacaoService';
+import {DateHelper} from '../helpers/DateHelper';
+import {Bind} from '../helpers/Bind';
+import {Negociacao} from '../models/Negociacao';
+
 class NegociacaoController {
     
     constructor() {
@@ -75,7 +84,7 @@ class NegociacaoController {
                 this._mensagem.texto = mensagem;
                 this._listaNegociacoes.esvazia();                
             })
-            .catch(erro => this._mensagem.texto = erro);
+            .catch(erro => this._mensage.texto = erro);
     }
     
     _criaNegociacao() {
@@ -103,4 +112,12 @@ class NegociacaoController {
         }
         this._ordemAtual = coluna;    
     }
+}
+
+let negociacaoController = new NegociacaoController();
+
+export function currentInstance() {
+
+    return negociacaoController;
+
 }
